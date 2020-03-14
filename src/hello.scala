@@ -7,12 +7,11 @@ object hello extends App {
 
   var r=5.0
   
-  printf(s"the area of a circe with radius $r = ${getArea(r)}")
+  printf(s"the area of a circe with radius $r = ${getArea(r)}\n")
 
   println("Hello, World!")
   
   for (a <- args) println(a)
-
 
 }
 
