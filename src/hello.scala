@@ -1,15 +1,19 @@
+import scala.math._
+import scala.collection.mutable._
+import java.io.PrintWriter
+
+import scala.io.Source
+
 object hello extends App {
-  def main1(args: Array[String]): Unit = {
+ var log10func=log10 _
 
-  }
+ def divide(num1:Int, num2:Int) =try {
+  (num1/num2)
+ } catch {
+  case ex: java.lang.ArithmeticException=>"can't divide by zero"
+ } finally {}
 
-  def getArea(radius:Double):Double=math.Pi*radius*radius
-
-var hero=new SuperHero("batman")
-  println(hero.fly)
-  println(hero.hitByBullet)
-  println(hero.richochet(100))
-  println("Hello, World!")
-  
+ var result=divide(10,0)
+ println(result.getClass().getSimpleName)
 }
 
