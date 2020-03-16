@@ -5,13 +5,11 @@ object hello extends App {
 
   def getArea(radius:Double):Double=math.Pi*radius*radius
 
-  var r=5.0
-  
-  printf(s"the area of a circe with radius $r = ${getArea(r)}\n")
-
+var hero=new SuperHero("batman")
+  println(hero.fly)
+  println(hero.hitByBullet)
+  println(hero.richochet(100))
   println("Hello, World!")
   
-  for (a <- args) println(a)
-
 }
 
